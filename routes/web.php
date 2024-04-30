@@ -39,5 +39,5 @@ Route::get('/studyplan', function () {
 })->name('studyplan');
 
 Route::get('/college', function () {
-
+    return view('college');
 })->name('college');
