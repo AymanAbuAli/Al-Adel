@@ -108,8 +108,6 @@
             /* 2 */
         }
 
-        @supports (-ms-ime-align:auto) {}
-
         html {
             font-size: 62.5%
         }
