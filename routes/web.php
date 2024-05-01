@@ -40,4 +40,4 @@ Route::get('/studyplan', function () {
 
 Route::get('/college', function () {
     return view('college');
-})->name('college');
+});
