@@ -1,76 +1,77 @@
 @extends('layouts.master')
-@section('title', 'college')
+@section('title', 'Colleges')
 
 @section('main')
-
     <style>
-        .center {
+        .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
-        .image-container {
+        .college {
+            margin: 20px;
+            padding: 10px;
+            width: 300px;
             text-align: center;
-            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .image-container img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
+        figure {
+            margin: 0;
         }
 
-        .image-container figcaption {
-            margin-top: 10px;
-            font-size: 16px;
+        figcaption {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
 
-        @media (max-width: 500px) {
-            .center {
-                flex-direction: column;
-                align-items: center;
-                height: auto;
-                width: auto;
-            }
-
-            .image-container {
-                margin-top: 80px;
-            }
+        p {
+            font-size: 1em;
+            color: #555;
         }
     </style>
-    <div class="center">
+    <div class="container">
+        <div class="college">
+            <figure>
 
+                <figcaption>Engineering College</figcaption>
+                <p>Specialization: Computer Science</p>
+            </figure>
+        </div>
 
-        <figcaption>Engineering College</figcaption>
-        </figure>
-    </div>
+        <div class="college">
+            <figure>
 
-    <div class="center">
+                <figcaption>Business College</figcaption>
+                <p>Specialization: Business Administration</p>
+            </figure>
+        </div>
 
+        <div class="college">
+            <figure>
 
-        <figcaption>Business College</figcaption>
-        </figure>
-    </div>
-    <div class="center">
-    
-       
-                <figcaption>Medical College</figcaption>
+                <figcaption>Languages College</figcaption>
+                <p>Specialization: Languages</p>
+            </figure>
+        </div>
+
+        <div class="college">
+            <figure>
+
+                <figcaption>Law College</figcaption>
+                <p>Specialization: Sharia and Law</p>
+            </figure>
+        </div>
+
+        <div class="college">
+            <figure>
+
+                <figcaption>Islamic Studies College</figcaption>
+                <p>Specialization: Quran and Jurisprudence</p>
             </figure>
         </div>
     </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
 @endsection
